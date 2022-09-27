@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <title>The Student Center</title>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content = "width=device-width, initial-scale=1"/>
+        <meta name = "description" content = "The Student Center is a non-profit organization providing educational oppurtunities for those in need"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel = "icon" type = "image/jpeg" href = "images/bigMoney.jpeg"/>
+        <style>
+            body{text-align:center;}
+            p{font-size: 30px}
+            #inPerson {background-image: url("../images/students2.jpg"); background-size: 100%; background-repeat: no-repeat;}
+            #online {background-image: url("../images/onlineClass.jpg"); background-size: 100%; background-repeat: no-repeat;}
+        </style>
+    </head>
+    <body>
+    <nav class = "navbar navbar-expand-sm bg-dark ps-3">
+            <ul class = "nav nav-pills">
+                <li class = "nav-item">
+                    <a class = "navbar-brand text-light">Student Center</a>
+                </li>
+                <li class = "nav-item"> 
+                    <a class = "nav-link text-light" href = "../index.html">Home</a>
+                </li>
+                <li class = "nav-item dropdown">    
+                    <a class = "nav-link dropdown-toggle text-light" data-bs-toggle = "dropdown" href = "#">Students</a>
+                    <ul class = "dropdown-menu">
+                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSffCXqFiVz_C7YWRvS60EPASnYt-4d6ljmNLGmSJZoSowcEaQ/viewform?usp=sf_link">Sign Up</a></li>
+                        <li><a class = "active dropdown-item bg-dark text-light">How it works</a></li>
+                    </ul>
+                </li>
+                <li class = "nav-item dropdown">    
+                    <a class = "nav-link dropdown-toggle text-light" data-bs-toggle = "dropdown" href = "#">Tutoring</a>
+                    <ul class = "dropdown-menu">
+                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSew0PwXSJjw9nnhK9fPirHXwWmrMUqS3B7X-2igeaVgmIVrUQ/viewform?usp=sf_link">Sign Up</a></li>
+                        <li><a class = "dropdown-item" href = "pages/studentInfo">How it works</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class = "container-fluid">
+        <div class = "container-fluid">
+            <h1 class = "display-1">How it works for students</h1>
+            <h2 class = "display-5">Students will either have lessons Online or In-Person (San Diego)</h2>
+        <div>
+        <div class = "row">
+            <div class = "col"><h3 class = "display-5">Online Lessons</h3></div>
+            <div class = "col"><h3 class = "display-5">In-Person Lessons</h3></div>    
+        </div>
+        <div class = "row">
+            <div id = "online" class = "col"><p>Once you have signed up (in the link under the studdents button), you will be contacted by a tutor to schedule a lesson. These lessons can take place over phone calls, whatsapp, or zoom. They may be group lessons or 1 on 1 lessons dependong on your choice when you signed up, and will usually last anywhere from 30 minutes to 1 hour. During the lesson, you will have a worksheet, passage, which your tutor will help you work through. Additionally, if you are a student and need homework help, we would be more than happy to help in any way we can.</p></div>
+            <div id = "inPerson" class = "col"><p>Once you have signed up (in the link under the "students" button), you will be notified by an organizer about upcoming events. In these events, we usually bring a few tutors to run group or individual lessons in community centers or parks. Since many of the refugees we currently help are located in hotels, we often hold the lessons there, and will also bring a few toys to keep young children busy while others learn.</p></div>  
+        </div>
+    </div>
+    </body>
+</html>
