@@ -11,13 +11,26 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
         <link rel = "icon" type = "image/jpeg" href = "../images/signup.png"/>
+        <!-- Font import -->
+        <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+
         <style>
-            .navbar {background-color: #21201E;}
-            body {text-align: center;}
-            #freeTutoringText {height: 51vw;background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat;}
+            @import url('http://fonts.cdnfonts.com/css/myriad-pro');
+            body {text-align: center; font-family: 'Myriad Pro', sans-serif; background-color: #125a6a;}
+            #freeTutoringText {width: 100vw;height: 57vw;background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat;}
+            #freeTutoringGrid {padding-top: 9vw;}
             .row {width: 100vw}
-            #button{height: 15vw;}
-            #button2{height: 25vw;}
+            .nav-link{font-size: 2vw; padding-left: 20px;}
+            strong {font-size: 4vw;}
+            #title {margin-bottom: -8vw; padding-right: 79vw; font-size: 3vw; font-weight: 550;}
+
+            #ourGoal {background-image: url("images/goal.png"); height: 50vw; margin-bottom: 5vw; background-size: 100%;}
+            #goalText {padding-top: 12vw; padding-right: 38vw; padding-left: 15vw}
+
+            #howWork {background-color: #208567;}
+
+            #button {height: 7vw; background-image: url(images/signupBackgroundHalf.png); background-size: 100%;}
+            #button:hover{background-image: url(images/signupBackgroundFull.png); background-size: 100%;}
             #tutoring{background-image: url("images/library.png"); background-attachment: fixed; background-size: 100%; background-repeat: no-repeat;} /* GLITCH CAUSED BY IMAGE BEING TOO SHORT */
             #aboutUs {width: 80vw}
             @media (max-width: @screen-xs) {
@@ -27,53 +40,59 @@
                 display: flex;
                 align-items: center;
             }
+            .nav-tabs > .active > a {
+              background-color: chartreuse;    
+            }
+            .nav-item > a:hover {
+              color: aqua;
+            }
+            .pt-lg-5 {margin-top: 6vw}
         </style>
     </head>
     <body>
-        <nav class = "navbar navbar-expand-sm ps-3">
-            <ul class = "nav nav-pills">
-                <li class = "nav-item">
-                    <a class = "navbar-brand text-light">Student Center</a>
-                </li>
-                <li class = "active nav-item">
-                    <a class = "active nav-link text-dark bg-light" href = "#">Home</a>
-                </li>
-                <li class = "nav-item dropdown">    
-                    <a class = "nav-link dropdown-toggle text-light" data-bs-toggle = "dropdown" href = "#">Students</a>
-                    <ul class = "dropdown-menu">
-                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSffCXqFiVz_C7YWRvS60EPASnYt-4d6ljmNLGmSJZoSowcEaQ/viewform?usp=sf_link">Sign Up</a></li>
-                        <li><a class = "dropdown-item" href = "pages/howStudents.html">How it works</a></li>
-                    </ul>
-                </li>
-                <li class = "nav-item dropdown">    
-                    <a class = "nav-link dropdown-toggle text-light" data-bs-toggle = "dropdown" href = "#">Tutoring</a>
-                    <ul class = "dropdown-menu">
-                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSew0PwXSJjw9nnhK9fPirHXwWmrMUqS3B7X-2igeaVgmIVrUQ/viewform?usp=sf_link">Sign Up</a></li>
-                        <li><a class = "dropdown-item" href = "pages/howTutors.html">How it works</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <h1 class = "display-6 text-light" id = "title">Student Center</h1>
         <div id = "freeTutoringText" class = "container-fluid">
-            <h3 class = "text-light display-1" style = "font-size: 3.5vw; padding-top: 90px; padding-bottom: 30px;">Free 1 on 1 tutoring
-                <br />Farsi/Spanish/English <br />In-Person and Online</h3>
-            <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank"><img id = "button" class = "img-fluid" alt = "sign up button" src = "images/signup.png"></a>
-        </div>
-        <!--
-        <div id = "tutoring" class = "container-fluid">
-            <div class = "row">
-                <div class = "col d-flex align-self-center justify-content-center">
-                    <a target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSew0PwXSJjw9nnhK9fPirHXwWmrMUqS3B7X-2igeaVgmIVrUQ/viewform"><img id = "button2" class = "img-fluid" src = "images/tutoring.png"></a>
+            <div id = "freeTutoringGrid" class = "row">
+                <div class = "col-lg-8 col-md-12 col-12 d-flex align-self-center justify-content-center">
+                    <h3 class = "display-6 text-light" style = "font-size: 4vw; padding-top: 12vw; padding-bottom: 2vw;">Free online and in-person tutoring<br />We teach English, Math, and Science <br >All in Farsi, English, or Spanish</h3>
                 </div>
-                <div class = "col d-flex align-self-center justify-content-center"><h2 class = "display-1 text-light" style = "font-size: 4vw">Become a tutor</h2></div>
+                <div class = "pt-sm-1 pt-lg-5 col-lg-4 col-md-12 col-12 d-flex align-self-center justify-content-center">
+                    <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank" src = "images/signup.png"><img id = "button" class = "img-fluid" alt = "sign up button" src = "images/signupText.png"></a>
+                </div>
             </div>
         </div>
-    -->
-        <div id = "aboutUs" class = "container-fluid mt-5">
-            <h2 class = "display-5">About Us</h2>
-            <p>
-                We are a non-profit organization made up of adults, high school students, and college students devoted to helping various people in need. We focus on helping refugees acclimate to their new homes, whether that be helping them learn new languages, study certain subjects, or run donation drives. If you have any other questions, feel free to email us at student.center.mail@gmail.com
+    <div id = "ourGoal" class = "container-fluid"></div>
+    <div id = "howWork" class = "container-fluid pt-3 pb-1">
+        <strong class = "text-light">How does it work?</strong>
+        <div class = "row">
+            <div class = "col-4">
+                <img class = "img-fluid" src = "images/learn.png">
+            </div>
+            <div class = "col-4">
+                <img class = "img-fluid" src = "images/learn.png">
+            </div>
+            <div class = "col-4">
+                <img class = "img-fluid pb-3" src = "images/learn.png">
+            </div>
+        </div>
+    </div>
+
+    <div class = "container mt-4 mb-5">
+        <ul class = "nav nav-tabs justify-content-center" role = "tablist">
+            <li class = "nav-item"><a class = "text-light nav-link active" data-bs-toggle = "tab" href = "#tate">Who are we?</a></li>
+            <li class = "nav-item"><a class = "text-light nav-link" data-bs-toggle = "tab" href = "#safetyFirst">How does it work?</a></li>
+            <li class = "nav-item"><a class = "text-light nav-link" data-bs-toggle = "tab" href = "#profit">Want to become a tutor?</a></li>
+        </ul>
+        <div class = "tab-content">
+            <div id = "tate" class = "container tab-pane text-light active"><br/>
+                 A non-profit organization made up of adults, high school students, and college students devoted to helping refugees acclimate to their new homes, whether that be through teaching new languages, assisting students with homework, or running donation drives. If you have any other questions, feel free to email us at student.center.mail@gmail.com
+            </div>
+            <div id = "safetyFirst" class = "text-align-right container tab-pane text-light fade"><br/>
+                Once you have <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank">signed up</a>, you will be contacted by a tutor to schedule a lesson. These lessons can take place over phone calls, whatsapp, or zoom. They may be group lessons or 1 on 1 lessons dependong on your choice when you signed up, and will usually last anywhere from 30 minutes to 1 hour. During the lesson, you will have a worksheet, passage, which your tutor will help you work through. Additionally, if you are a student and need homework help, you can have your tutor help you through that instead. For in-person lessons you will be notified by an organizer about upcoming events. In these events, we usually bring a few tutors to run group or individual lessons in community centers or parks. Since many of the refugees we currently help are located in hotels, we often hold the lessons there, and will also bring a few toys to keep young children busy while others learn.
             </p>
+            <div id ="profit" class = "container tab-pane text-light fade"><br/>
+                <iframe src  = "https://www.ky3.com/2022/09/19/florida-man-pleads-guilty-money-laundering-conspiracy-targeting-fort-leonard-wood/" title = "Profit Guide"></iframe>
+            </div>
         </div>
     </body>
 </html>
