@@ -13,24 +13,27 @@
         <link rel = "icon" type = "image/jpeg" href = "../images/signup.png"/>
         <!-- Font import -->
         <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
-
         <style>
-
             @import url('http://fonts.cdnfonts.com/css/myriad-pro');
             body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
             #freeTutoringText {width: 100vw; height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
             #freeTutoringGrid {padding-top: 6.5vw;}
             .row {width: 100vw}
-            .nav-link{font-size: 2vw; padding-left: 20px;}
             strong {font-size: 4vw;}
-            #title {padding-top: 1vw; padding-right: 77vw; font-size: 3vw; font-weight: 550;}
+            
+            .navbar-brand {padding-top: 20vw; font-size: 4vw; font-weight: 550;}
+            .nav-item {padding-top: 1.4vw;}
+            .nav-link {font-size: 2.5vw; color: black}
+            .active {color: #41c5a1}
 
             #freeText {width: 60vw}
 
-            #ourGoal {background-image: url("images/goal.png"); height: 50vw; margin-bottom: 5vw; background-size: 100%;}
+            #ourGoal {background-image: url("images/goal.png"); height: 50vw; margin-top: 2vw; margin-bottom: 5vw; background-size: 100%;}
+            #whoWe {background-image: url("images/us.png"); height: 50vw; margin-bottom: 2vw; background-size: 100%;}
+
             #goalText {padding-top: 12vw; padding-right: 38vw; padding-left: 15vw}
 
-            #howWork {background-color: #208567;}
+            #howWork {background-image: url("images/students3.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
 
             #button {height: 7vw; background-image: url(images/signupBackgroundHalf.png); background-size: 100%;}
             #button:hover{background-image: url(images/signupBackgroundFull.png); background-size: 100%;}
@@ -49,10 +52,27 @@
             .nav-item > a:hover {
               color: aqua;
             }
+
+
+
         </style>
     </head>
     <body>
-        <h1 class = "display-6 text-dark" id = "title">Student Center</h1>
+        <nav class = "navbar navbar-expand-sm ps-3">
+            <ul class = "nav">
+                <li class = "pt-2">
+                    <a class = "navbar-brand">Student Center</a>
+                </li>
+                <li class = "active nav-item"> 
+                    <a class = "active nav-link" href = "https://forms.gle/FWcizPnu5Fm3GWxr9">Home</a>
+                </li>
+                <li class = "nav-item"><a class = "nav-link" href = "pages/howStudents.html">Become a student</a></li>
+                <li class = "nav-item">    
+                    <a class = "nav-link" href = "https://forms.gle/LpRzzMBNu6HPhcLz7">Become a tutor</a>
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
         <div id = "freeTutoringText" class = "container-fluid">
             <div id = "freeTutoringGrid" class = "row">
                 <div class = "p-n4 col-lg-8 col-md-12 col-12 d-flex align-self-center justify-content-center">
@@ -62,42 +82,15 @@
                     -->
                 </div>
                 <div class = "col-lg-4 col-md-12 col-12 d-flex align-self-center justify-content-center">
-                    <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank" src = "images/signup.png"><img id = "button" class = "img-fluid" alt = "sign up button" src = "images/signupText.png"></a>
+                    <div class = "col"> <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank" src = "images/signup.png"><img id = "button" class = "img-fluid" alt = "sign up button" src = "images/signupText.png"></a> </div>
                 </div>
             </div>
         </div>
     <div id = "ourGoal" class = "container-fluid"></div>
+    <div id = "whoWe" class = "container-fluid"></div>
     <div id = "howWork" class = "container-fluid pt-3 pb-1">
         <strong class = "text-light">How does it work?</strong>
-        <div class = "row">
-            <div class = "col-4">
-                <img class = "img-fluid" src = "images/learn.png">
-            </div>
-            <div class = "col-4">
-                <img class = "img-fluid" src = "images/lesson.png">
-            </div>
-            <div class = "col-4">
-                <img class = "img-fluid pb-3" src = "images/learn!.png">
-            </div>
-        </div>
+        <img class = "img-fluid" src = "images/process.png">
     </div>
-
-    <div class = "container mt-4 mb-5">
-        <ul class = "nav nav-tabs justify-content-center" role = "tablist">
-            <li class = "nav-item"><a class = "text-light nav-link active" data-bs-toggle = "tab" href = "#tate">Who are we?</a></li>
-            <li class = "nav-item"><a class = "text-light nav-link" data-bs-toggle = "tab" href = "#safetyFirst">How does it work?</a></li>
-            <li class = "nav-item"><a class = "text-light nav-link" data-bs-toggle = "tab" href = "#profit">Want to become a tutor?</a></li>
-        </ul>
-        <div class = "tab-content">
-            <div id = "tate" class = "container tab-pane text-light active"><br/>
-                 A non-profit organization made up of adults, high school students, and college students devoted to helping refugees acclimate to their new homes, whether that be through teaching new languages, assisting students with homework, or running donation drives. If you have any other questions, feel free to email us at student.center.mail@gmail.com
-            </div>
-            <div id = "safetyFirst" class = "text-align-right container tab-pane text-light fade"><br/>
-                Once you have <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank">signed up</a>, you will be contacted by a tutor to schedule a lesson. These lessons can take place over phone calls, whatsapp, or zoom. They may be group lessons or 1 on 1 lessons dependong on your choice when you signed up, and will usually last anywhere from 30 minutes to 1 hour. During the lesson, you will have a worksheet, passage, which your tutor will help you work through. Additionally, if you are a student and need homework help, you can have your tutor help you through that instead. For in-person lessons you will be notified by an organizer about upcoming events. In these events, we usually bring a few tutors to run group or individual lessons in community centers or parks. Since many of the refugees we currently help are located in hotels, we often hold the lessons there, and will also bring a few toys to keep young children busy while others learn.
-            </p>
-            <div id ="profit" class = "container tab-pane text-light fade"><br/>
-                <iframe src  = "https://www.ky3.com/2022/09/19/florida-man-pleads-guilty-money-laundering-conspiracy-targeting-fort-leonard-wood/" title = "Profit Guide"></iframe>
-            </div>
-        </div>
     </body>
 </html>

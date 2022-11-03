@@ -10,52 +10,65 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel = "icon" type = "image/jpeg" href = "images/signup.png"/>
+        <link rel = "icon" type = "image/jpeg" href = "../images/signup.png"/>
+        <!-- Font import -->
+        <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
         <style>
-            .navbar {background-color: #183642;}
-            .nav {padding-left: 15px}
-            body{text-align:center;background-image: url("../images/howbackground.png");background-size: 100vw; background-repeat: no-repeat;}
-            p{font-size: 2.5}
+            @import url('http://fonts.cdnfonts.com/css/myriad-pro');
+            body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
+            #freeTutoringText {width: 100vw; height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
+            #freeTutoringGrid {padding-top: 6.5vw;}
+            .row {width: 100vw}
+            strong {font-size: 4vw;}
+            
+            .navbar-brand {padding-top: 20vw; font-size: 4vw; font-weight: 550;}
+            .nav-item {padding-top: 1.4vw;}
+            .nav-link {font-size: 2.5vw; color: black}
+            .active {color: #41c5a1}
+            .nav-tabs > .active > a {
+              background-color: chartreuse;    
+            }
+            .nav-item > a:hover {
+              color: aqua;
+            }
+            
+
+            #howOnline {background-image: url("../images/online.png");}
+
+            #form {width: 100vw; height: 90vw;}
+            @media (min-width: 1000px){
+                #form {width: 100vw; height: 55vw;}
+            }
+
+            .paragraph {font-size: 4vw; letter-spacing: 1px; padding-left: 4vw;}
+            @media (min-width: 960px){
+                .paragraph {font-size: 1.9vw; letter-spacing: 1.5px; padding-left: 0px;}
+            }
+
+
+
         </style>
     </head>
     <body>
-    <nav class = "navbar navbar-expand-sm bg-dark ps-3">
-            <ul class = "nav nav-pills">
-                <li class = "nav-item">
-                    <a class = "navbar-brand text-light">Student Center</a>
+        <nav class = "navbar navbar-expand-sm ps-3">
+            <ul class = "nav">
+                <li class = "pt-2">
+                    <a class = "navbar-brand">Student Center</a>
                 </li>
-                <li class = "nav-item"> 
-                    <a class = "nav-link text-light" href = "../index.html">Home</a>
+                <li class = "active nav-item"> 
+                    <a class = "nav-link" href = "../index.html">Home</a>
                 </li>
-                <li class = "nav-item dropdown">    
-                    <a class = "bg-light nav-link dropdown-toggle text-dark" data-bs-toggle = "dropdown" href = "#">Students</a>
-                    <ul class = "dropdown-menu">
-                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSffCXqFiVz_C7YWRvS60EPASnYt-4d6ljmNLGmSJZoSowcEaQ/viewform?usp=sf_link">Sign Up</a></li>
-                        <li><a class = "active dropdown-item bg-dark text-light">How it works</a></li>
-                    </ul>
-                </li>
-                <li class = "nav-item dropdown">    
-                    <a class = "nav-link dropdown-toggle text-light" data-bs-toggle = "dropdown" href = "#">Tutoring</a>
-                    <ul class = "dropdown-menu">
-                        <li><a class = "dropdown-item" target = "_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSew0PwXSJjw9nnhK9fPirHXwWmrMUqS3B7X-2igeaVgmIVrUQ/viewform?usp=sf_link">Sign Up</a></li>
-                        <li><a class = "dropdown-item" href = "howTutors.html">How it works</a></li>
-                    </ul>
+                <li class = "active nav-item"><a class = "active nav-link">Become a student</a></li>
+                <li class = "nav-item">    
+                    <a class = "nav-link" href = "https://forms.gle/LpRzzMBNu6HPhcLz7">Become a tutor</a>
+                    </ul> 
                 </li>
             </ul>
         </nav>
-    <div class = "container-fluid">
+        <img class = "img-fluid" src = "../images/fade.png">
         <div class = "container-fluid">
-            <h1 class = "display-1 text-light">How it works for students</h1>
-            <h2 class = "display-5 text-light">Students will either have lessons Online or In-Person (San Diego)</h2>
-        <div>
-        <div class = "row">
-            <div class = "col"><h3 class = "display-5 text-light">Online Lessons</h3></div>
-            <div class = "col"><h3 class = "display-5 text-light">In-Person Lessons</h3></div>    
-        </div>
-        <div class = "row">
-            <div id = "online" class = "col"><p class = "text-light">Once you have signed up (in the link under the students button), you will be contacted by a tutor to schedule a lesson. These lessons can take place over phone calls, whatsapp, or zoom. They may be group lessons or 1 on 1 lessons dependong on your choice when you signed up, and will usually last anywhere from 30 minutes to 1 hour. During the lesson, you will have a worksheet, passage, which your tutor will help you work through. Additionally, if you are a student and need homework help, we would be more than happy to help in any way we can.</p></div>
-            <div id = "inPerson" class = "col"><p class = "text-light">Once you have signed up (in the link under the "students" button), you will be notified by an organizer about upcoming events. In these events, we usually bring a few tutors to run group or individual lessons in community centers or parks. Since many of the refugees we currently help are located in hotels, we often hold the lessons there, and will also bring a few toys to keep young children busy while others learn.</p></div>  
-        </div>
-    </div>
-    </body>
+
+        <img style = "margin-bottom: 10px"class = "img-fluid" src = "../images/Online.png">
+        <img class = "img-fluid" src = "../images/inperson.png">
+        <iframe id = "form" src="https://forms.gle/7y2mSPM8TWYSQyod7"></iframe>
 </html>
