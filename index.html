@@ -21,6 +21,7 @@
             .row {width: 100vw}
             strong {font-size: 4vw;}
             
+            .nav {animation: fadein 2s;}
             .navbar-brand {padding-top: 20vw; font-size: 4vw; font-weight: 550;}
             .nav-item {padding-top: 1.4vw;}
             .nav-link {font-size: 2.5vw; color: black}
@@ -53,8 +54,15 @@
               color: aqua;
             }
 
-
-
+            @keyframes fadein {
+                0% {
+                    opacity: 0%;
+                    margin-left: 5vw;
+                }
+                100% {
+                    opacity: 100%;
+                    margin-right: 0%;
+                }
         </style>
     </head>
     <body>
@@ -64,7 +72,7 @@
                     <a class = "navbar-brand">Student Center</a>
                 </li>
                 <li class = "active nav-item"> 
-                    <a class = "active nav-link" href = "https://forms.gle/FWcizPnu5Fm3GWxr9">Home</a>
+                    <a class = "active nav-link" href = "#">Home</a>
                 </li>
                 <li class = "nav-item"><a class = "nav-link" href = "pages/howStudents.html">Become a student</a></li>
                 <li class = "nav-item">    
