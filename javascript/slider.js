@@ -9,4 +9,4 @@ slider.oninput = function() {
 
 let val = string(slider.value)
 
-document.getElementById('in-online').style.margin-right = val + "px";
+document.getElementById('online').opacity = val;

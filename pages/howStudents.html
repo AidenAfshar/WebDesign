@@ -15,107 +15,36 @@
         <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
         <style>
             @import url('http://fonts.cdnfonts.com/css/myriad-pro');
-            body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
-            #freeTutoringText {width: 100vw; height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
-            #freeTutoringGrid {padding-top: 6.5vw;}
-            .row {width: 100vw}
-            strong {font-size: 4vw;}
+            body {text-align: center; font-family: 'Myriad Pro', sans-serif; background-color: #208567}
 
-            .navbar-brand {padding-top: 20vw; font-size: 4vw; font-weight: 550;}
+            .navbar {background-color: none;}
+            .navbar-brand {color: white; font-size: 4vw; font-weight: 550; margin-left: 2vw}
+            /* Not sure why it changes color on hover(added to prevent that) */
+            .navbar-brand:hover {color: white;}
             .nav-item {padding-top: 1.4vw;}
-            .nav-link {font-size: 2.5vw; color: black}
-            .active {color: #41c5a1}
+            .nav-link {font-size: 2.5vw; color: white}
+            .active {color: #beb0ff}
             .nav-tabs > .active > a {
               background-color: chartreuse;
             }
             .nav-item > a:hover {
               color: aqua;
             }
-            
-            #fade {margin-top: -20px; `margin-bottom: -5vw; width: 100vw}
+            #homeButton {margin-left: 20vw}
 
-            .in-online {width: 100vw}
 
-            #howOnline {background-image: url("../images/online.png");}
-
-            #form {width: 100vw; height: 90vw;}
             @media (min-width: 1000px){
-                #form {width: 100vw; height: 55vw;}
+                #form {width: 50vw; height: 800px;}
             }
+            strong {font-size: 4vw;color: white; line-height: 9vw}
+            label {color: white;}
+            .form-control {margin-bottom:3vh}
+            option {text-align: center}
+            .radioLabel {text-align: left;}
+            #exampleRadios1 {margin-right: 25px; margin-left: -30px}
+            #exampleRadios2 {margin-right: 20px; margin-left: -11px}
+            #exampleRadios3 {margin-right: 20px; margin-left: -15px}
 
-            .paragraph {font-size: 4vw; letter-spacing: 1px; padding-left: 4vw;}
-            @media (min-width: 960px){
-                .paragraph {font-size: 1.9vw; letter-spacing: 1.5px; padding-left: 0px;}
-            }
-
-
-            .slidecontainer {
-              width: 100%; /* Width of the outside container */
-            }
-
-            /* The slider itself */
-            .slider {
-              -webkit-appearance: none;  /* Override default CSS styles */
-              appearance: none;
-              width: 100%; /* Full-width */
-              height: 25px; /* Specified height */
-              background: #d3d3d3; /* Grey background */
-              outline: none; /* Remove outline */
-              opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-              -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-              transition: opacity .2s;
-            }
-
-            /* Mouse-over effects */
-            .slider:hover {
-              opacity: 1; /* Fully shown on mouse-over */
-            }
-
-            /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-            .slider::-webkit-slider-thumb {
-              -webkit-appearance: none; /* Override default look */
-              appearance: none;
-              width: 25px; /* Set a specific slider handle width */
-              height: 25px; /* Slider handle height */
-              background: #04AA6D; /* Green background */
-              cursor: pointer; /* Cursor on hover */
-            }
-
-            .slider::-moz-range-thumb {
-              width: 25px; /* Set a specific slider handle width */
-              height: 25px; /* Slider handle height */
-              background: #04AA6D; /* Green background */
-              cursor: pointer; /* Cursor on hover */
-            }
-            .slider {
-          -webkit-appearance: none;
-          width: 100%;
-          height: 15px;
-          border-radius: 5px;  
-          background: #d3d3d3;
-          outline: none;
-          opacity: 0.7;
-          -webkit-transition: .2s;
-          transition: opacity .2s;
-        }
-
-        .slider::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 25px;
-          height: 25px;
-          border-radius: 50%; 
-          background: #04AA6D;
-          cursor: pointer;
-        }
-
-        .slider::-moz-range-thumb {
-          width: 25px;
-          height: 25px;
-          border-radius: 50%;
-          background: #04AA6D;
-          cursor: pointer;
-        }
 
         </style>
     </head>
@@ -123,10 +52,10 @@
         <nav class = "navbar navbar-expand-sm ps-3">
             <ul class = "nav">
                 <li class = "pt-2">
-                    <a class = "navbar-brand">Student Center</a>
+                    <a class = "navbar-brand">The Student Center</a>
                 </li>
                 <li class = "active nav-item">
-                    <a class = "nav-link" href = "../index.html">Home</a>
+                    <a id = "homeButton" class = "nav-link" href = "../index.html">Home</a>
                 </li>
                 <li class = "active nav-item"><a class = "active nav-link">Become a student</a></li>
                 <li class = "nav-item">
@@ -135,11 +64,66 @@
                 </li>
             </ul>
         </nav>
-        <img id = "fade" src = "../images/fade.png">
-        <img class = "in-online" src = "../images/Online.png">
-        <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-lg-6 col-12 align-self-center"><strong>Online and In-Person</br>Zoom, Whatsapp, Call</br>English, Math, Science</strong></div>
+                <div class = "col-lg-6 col-12"> 
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder= "Email address">
+
+                            <input class="form-control"placeholder="Full Name">
+                            
+                            <input class="form-control"placeholder="Age (number)">
+                            <!-- email -->
+                            <input class="form-control"placeholder="Phone Number">
+
+                            <input class="form-control"placeholder="Education level (Kindergarden -> Graduate)">
+                            
+                            <input class="form-control"placeholder="Number of years studying english (write 'fluent' if you are fluent)">
+
+                            <label>Topics you want to learn</label>
+                            <div class = "form-group">
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">English</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Math</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox2">History</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group radioLabel ">
+                                <label class="form-check-label d-flex justify-content-center" for="radioLabel">Preferred Method of Contact</label>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                      Zoom
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    Whatsapp
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                  <label class="form-check-label" for="exampleRadios3">
+                                    Telegram
+                                  </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <img class = "in-person" src = "../images/inperson.png">
-        <iframe id = "form" src="https://forms.gle/7y2mSPM8TWYSQyod7"></iframe>
 </html>

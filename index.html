@@ -16,37 +16,11 @@
         <style>
             @import url('http://fonts.cdnfonts.com/css/myriad-pro');
             body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
-            #freeTutoringText {width: 100vw; height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
-            #freeTutoringGrid {padding-top: 6.5vw;}
-            .row {width: 100vw}
-            strong {font-size: 4vw;}
 
-            .nav {animation: fadein 2s;}
-            .navbar-brand {padding-top: 20vw; font-size: 4vw; font-weight: 550;}
-            .nav-item {padding-top: 1.4vw;}
-            .nav-link {font-size: 2.5vw; color: black}
+            .navbar-brand {font-size: 2.5vw; font-weight: 550; margin-left: 2.5vw; margin-bottom: 20px}
+            .nav-item {padding-top: 0.7vw;}
+            .nav-link {font-size: 1.8vw; color: black}
             .active {color: #41c5a1}
-
-            #freeText {width: 60vw}
-
-            #ourGoal {background-image: url("images/goal.png"); height: 50vw; margin-top: 2vw; margin-bottom: 5vw; background-size: 100%;}
-            #whoWe {background-image: url("images/us.png"); height: 50vw; margin-bottom: 2vw; background-size: 100%;}
-
-            #goalText {padding-top: 12vw; padding-right: 38vw; padding-left: 15vw}
-
-            #howWork {background-image: url("images/students3.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
-
-            #button {height: 7vw; background-image: url(images/signupBackgroundHalf.png); background-size: 100%;}
-            #button:hover{background-image: url(images/signupBackgroundFull.png); background-size: 100%;}
-            #tutoring{background-image: url("images/library.png"); background-attachment: fixed; background-size: 100%; background-repeat: no-repeat;} /* GLITCH CAUSED BY IMAGE BEING TOO SHORT */
-            #aboutUs {width: 80vw}
-            @media (max-width: @screen-xs) {
-                h3 {font-size: 10px}
-            }
-            .vertical-align {
-                display: flex;
-                align-items: center;
-            }
             .nav-tabs > .active > a {
               background-color: chartreuse;
             }
@@ -54,25 +28,60 @@
               color: aqua;
             }
 
-            @keyframes fadein {
+            #Description {height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
+            #DescriptionGrid {padding-top: 6.5vw;}
+            #DescriptionText {width: 60vw}
+
+            #studentButton {animation: studentFadeIn 2s; height: 7vw; background-image: url(images/studentSignupBackgroundHalf.png); background-size: 100%;}
+            #studentButton:hover{background-image: url(images/studentSignupBackgroundFull.png); background-size: 100%;}
+            #tutorButton {animation: tutorFadeIn 2s; height: 7vw; background-image: url(images/tutorSignupBackgroundHalf.png); background-size: 100%;}
+            #tutorButton:hover{background-image: url(images/tutorSignupBackgroundFull.png); background-size: 100%;}
+
+            #ourGoal {background-image: url("images/goal.png"); height: 50vw; margin-top: 2vw; margin-bottom: 5vw; background-size: 100%;}
+            #whoWeAre {background-image: url("images/us.png"); height: 50vw; margin-bottom: 2vw; background-size: 100%;}
+            #problem {background-image: url("images/problem.png"); height: 50vw; margin-bottom: 2vw; background-size: 100%;}
+
+            @media (max-width: 990px){
+                .nav-link {font-size: 3vw;}
+                .navbar-brand {font-size: 3vw;}
+                #homeButton {margin-left: -2vw;}
+                
+                .signUpButton {scale: 135%;}
+                #tutorButton {margin-left: 4.5vw}
+                #studentButton {margin-right: 4.5vw}
+                #DescriptionText {scale: 110%; margin-top: -3vw}
+            }
+
+            @keyframes studentFadeIn {
                 0% {
                     opacity: 0%;
-                    margin-left: 5vw;
+                    margin-right: 6vw;
+                }
+                100% {
+                    opacity: 100%;
+                    margin-left: 0%;
+                }
+            }
+            @keyframes tutorFadeIn {
+                0% {
+                    opacity: 0%;
+                    margin-left: 6vw;
                 }
                 100% {
                     opacity: 100%;
                     margin-right: 0%;
                 }
+            }
         </style>
     </head>
     <body>
-        <nav class = "navbar navbar-expand-sm ps-3">
+        <nav class = "navbar">
             <ul class = "nav">
-                <li class = "pt-2">
-                    <a class = "navbar-brand">Student Center</a>
+                <li class = "align-self-center">
+                    <a class = "navbar-brand">The Student Center</a>
                 </li>
                 <li class = "active nav-item"> 
-                    <a class = "active nav-link" href = "#">Home</a>
+                    <a id = "homeButton" class = "active nav-link">Home</a>
                 </li>
                 <li class = "nav-item"><a class = "nav-link" href = "pages/howStudents.html">Become a student</a></li>
                 <li class = "nav-item">
@@ -81,24 +90,18 @@
                 </li>
             </ul>
         </nav>
-        <div id = "freeTutoringText" class = "container-fluid">
-            <div id = "freeTutoringGrid" class = "row">
-                <div class = "p-n4 col-lg-8 col-md-12 col-12 d-flex align-self-center justify-content-center">
-                    <img id = "freeText" class = "ps-lg-5" src = "images/freeText.png">
-                    <!--
-                    <h3 class = "display-6 text-light" style = "font-size: 4vw; padding-top: 12vw; padding-bottom: 2vw;">Free online and in-person tutoring<br />We teach English, Math, and Science <br >All in Farsi, English, or Spanish</h3>
-                    -->
+        <div id = "Description" class = "container-fluid">
+            <div id = "DescriptionGrid" class = "row">
+                <div class = "col-lg-8 col-md-12 col-12 d-flex align-self-center justify-content-center">
+                    <img id = "DescriptionText" class = "ps-lg-5" src = "images/freeText.png">
                 </div>
                 <div class = "col-lg-4 col-md-12 col-12 d-flex align-self-center justify-content-center">
-                    <div class = "col"> <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank" src = "images/signup.png"><img id = "button" class = "img-fluid" alt = "sign up button" src = "images/signupText.png"></a> </div>
+                    <div class = "col"> <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank"><img class = "signUpButton" id = "studentButton" class = "img-fluid" alt = "sign up to be a student button" src = "images/becomestudent.png"></a><a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank"><img class = "signUpButton" id = "tutorButton" class = "img-fluid" alt = "sign up to be a tutor button" src = "images/becometutor.png"></a></div>
                 </div>
             </div>
         </div>
     <div id = "ourGoal" class = "container-fluid"></div>
-    <div id = "whoWe" class = "container-fluid"></div>
-    <div id = "howWork" class = "container-fluid pt-3 pb-1">
-        <strong class = "text-light">How does it work?</strong>
-        <img class = "img-fluid" src = "images/process.png">
-    </div>
+    <div id = "whoWeAre" class = "container-fluid"></div>
+    <div id = "problem" class = "container-fluid"></div>
     </body>
 </html>
