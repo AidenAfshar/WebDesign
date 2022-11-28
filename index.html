@@ -17,51 +17,84 @@
     </head>
     <body>
         <nav class = "navbar">
-            <ul class = "nav">
+            <ul class = "nav align-item-center">
                 <li class = "align-self-center">
                     <a class = "navbar-brand">The Student Center</a>
                 </li>
                 <li class = "active nav-item"> 
-                    <a id = "homeButton" class = "active nav-link">Home</a>
+                    <a class = "align-text-center active nav-link">Home</a>
                 </li>
-                <li class = "nav-item"><a class = "nav-link" href = "pages/howStudents.html">Become a student</a></li>
+                <li class = "nav-item">
+                    <a class = "nav-link" target = "_blank" href = "https://forms.gle/LpRzzMBNu6HPhcLz7">Become a student</a>
+                </li>
                 <li class = "nav-item">
                     <a class = "nav-link" target="_blank" href = "https://forms.gle/LpRzzMBNu6HPhcLz7">Become a tutor</a>
-                    </ul>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link" href = "pages/aboutUs.html">About us</a>
                 </li>
             </ul>
         </nav>
+
         <div id = "Description" class = "container-fluid">
             <div id = "DescriptionGrid" class = "row">
-                <div class = "col-lg-8 col-md-12 col-12 d-flex align-self-center justify-content-center">
-                    <img id = "DescriptionText" class = "ps-lg-5" src = "images/freeText.png">
+                <div class = "col-lg-8 col-12 d-flex align-self-center justify-content-center">
+                    <p id = "DescriptionText" class = "text-light">Free online and In-Person tutoring<br/>We Teach 
+                    English Math and Science<br/>All in Farsi, English, or Spanish</p>
                 </div>
-                <div class = "col-lg-4 col-md-12 col-12 d-flex align-self-center justify-content-center">
-                    <div class = "col"> <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank"><img class = "signUpButton" id = "studentButton" class = "img-fluid" alt = "sign up to be a student button" src = "images/becomestudent.png"></a><a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank"><img class = "signUpButton" id = "tutorButton" class = "img-fluid" alt = "sign up to be a tutor button" src = "images/becometutor.png"></a></div>
+                <div class = "pt-lg-5 col-lg-4 col-12 d-flex align-self-center justify-content-center">
+                    <div class = "col"> 
+                        <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank">
+                            <img class = "signUpButton" id = "studentButton" class = "img-fluid" alt = "sign up to be a student button" src = "images/becomestudent.png">
+                        </a>
+                        <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank">
+                            <img class = "signUpButton" id = "tutorButton" class = "img-fluid" alt = "sign up to be a tutor button" src = "images/becometutor.png">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    <!-- Make the text parts of image into actual text -->
-    <img class = "img-fluid" src = "images/goal.png">
-    <img class = "img-fluid" src = "images/us.png">
-    <img class = "img-fluid" src = "images/problem.png">
-    <div id = "footer" class = "container-fluid">
-        <div class = "row">
-            <div class = "col">
-                <p class = "text-light noLineBreak">Created by Aiden Afshar -- 2022</p>
-                <br/>
-                <a class = "text-light termsLink" href = "#">Privacy Policy</a>
-                <p class = "text-light noLineBreak">┃</p>
-                <a class = "text-light termsLink" href = "#">Terms of use</a>
-                <br/> <!-- Had to use br here instead of not using "noLineBreak" class because it would otherwise push the email link to the next line -->
-                <p class = "text-light noLineBreak">Contact us at: </p>
-                <a class = "text-light" href = "mailto: student.center.mail@gmail.com">student.center.mail@gmail.com</a>
-            </div>
-            <div class = "col">
-                <a target = "_blank" href = "https://www.instagram.com/"><img class = "img-fluid" id = "instagram" src = "images/instagram.png"></a>
-            </div>
 
+        <!-- Text is in image to here because of alignment issues -->
+        <img class = "img-fluid" src = "images/whatwedo.png">
+        <img id = "whoWeAre" class = "img-fluid" src = "images/us.png">
+
+        <h1 id = "newsHeader" class = "text-light headerText">News Coverage</h1>
+        <!-- Needed to put the css on the container instead of the embed itself because css directly modifying the embed didn't work -->
+        <div class = "container-fluid">
+            <div class = "row mb-lg-5 mt-lg-5">
+                <div class = "col-lg-6 col-md-6 col-12">
+                    <div id = "NBCVideo" class = "container-fluid newsVideo">
+                        <!-- I would use a separate javascript file but I don't know how this works (no documentation) so I just copied what nbc put for embeds -->
+                        <script type="text/javascript" charset="UTF-8" src="https://www.nbcsandiego.com/portableplayer/?CID=1:13:2865390&videoID=2001484867826&origin=nbcsandiego.com&fullWidth=y"></script>
+                    </div>
+                </div>
+                <div class = "col-lg-6 col-md-6 col-12">
+                    <div class = "col-lg-6 col-md-6 col-12">
+                        <div class = "container-fluid">
+                            <iframe id = "audpop" class = "newsVideo" src="https://audpop.com/embed/teenager-teaches-english-to-refugees-142054" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div id = "footer" class = "container-fluid">
+            <div class = "row">
+                <div id = "terms" class = "col">
+                    <p class = "text-light noLineBreak">Created by Aiden Afshar -- 2022</p>
+                    <br/>
+                    <a class = "text-light termsLink" href = "#">Privacy Policy</a>
+                    <p class = "text-light noLineBreak">┃</p>
+                    <a class = "text-light termsLink" href = "#">Terms of use</a>
+                    <br/> <!-- Had to use br here instead of not using "noLineBreak" class because it would otherwise push the email link to the next line -->
+                    <p class = "text-light noLineBreak">Contact us at: </p>
+                    <a class = "text-light" href = "mailto: student.center.mail@gmail.com">student.center.mail@gmail.com</a>
+                </div>
+                <div class = "col">
+                    <a id = "instagramRef" target = "_blank" href = "https://www.instagram.com/"><img id = "instagram" src = "images/instagram.png"></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

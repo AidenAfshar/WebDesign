@@ -1,10 +1,43 @@
-@import url('http://fonts.cdnfonts.com/css/myriad-pro');
-body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
+/* ## Universal ## */
 
-.navbar-brand {font-size: 2.5vw; font-weight: 550; margin-left: 2.5vw; margin-bottom: 20px}
-.nav-item {padding-top: 0.7vw;}
-.nav-link {font-size: 1.8vw; color: black}
-.active {color: #41c5a1}
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+body {
+    text-align: center;
+    font-family: 'Myriad Pro', sans-serif;}
+h1 {
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #202020;
+}
+h2 {
+    font-weight: 300;
+    font-size: 1.7vw;
+}
+h3{
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+p {
+    font-weight: 300;
+}
+a {
+    font-weight: 300;
+}
+
+.navbar-brand {
+    font-size: 2.5vw;
+    font-weight: 550;
+    margin-left: 2.5vw;
+}
+.nav-item {
+    padding-top: 0.7vw
+}
+.nav-link {
+    font-size: 1.8vw; 
+    color: black
+}
+.active {
+    color: #41c5a1;
+}
 .nav-tabs > .active > a {
   background-color: chartreuse;
 }
@@ -12,31 +45,148 @@ body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
   color: aqua;
 }
 
-#Description {height: 37vw; background-image: url("images/students.png"); background-size: 100vw; background-repeat: no-repeat; background-attachment: fixed;}
-#DescriptionGrid {padding-top: 6.5vw;}
-#DescriptionText {width: 60vw}
-
-#studentButton {animation: studentFadeIn 2s; height: 7vw; background-image: url(images/studentSignupBackgroundHalf.png); background-size: 100%;}
-#studentButton:hover{background-image: url(images/studentSignupBackgroundFull.png); background-size: 100%;}
-#tutorButton {animation: tutorFadeIn 2s; height: 7vw; background-image: url(images/tutorSignupBackgroundHalf.png); background-size: 100%;}
-#tutorButton:hover{background-image: url(images/tutorSignupBackgroundFull.png); background-size: 100%;}
-
-#footer {background-color: #208567; padding-top: 2vw; padding-bottom: 2vw; font-size: 0.9vw; text-align: left; padding-left: 5vw}
-.termsLink:link {text-decoration: none}
-.termsLink:hover {text-decoration: underline;}
-.noLineBreak {display: inline;}
-#instagram {padding-left: 40vw;}
-
-@media (max-width: 990px){
-    .nav-link {font-size: 3vw;}
-    .navbar-brand {font-size: 3vw;}
-    #homeButton {margin-left: -2vw;}
-    
-    .signUpButton {scale: 135%;}
-    #tutorButton {margin-left: 4.5vw}
-    #studentButton {margin-right: 4.5vw}
-    #DescriptionText {scale: 110%; margin-top: -3vw}
+.headerText {
+    font-size: 2.6vw;
+    font-weight: 600;
+    box-shadow: 0.4vw 0.4vw 0.5vw #4b4b4b;
+    width: 20vw;
+    background-color: #208567;
 }
+
+#footer {
+    background-color: #208567; 
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+    font-size: 0.9vw; 
+    text-align: left;
+}
+#terms {
+    padding-left: 5vw;
+}
+.termsLink:link {
+    text-decoration: none;
+}
+.termsLink:hover {
+    text-decoration: underline;
+}
+.noLineBreak {
+    display: inline;
+}
+/* why hitbox weird? (add a background color to demonstrate) */
+#instagramRef {
+    padding-left: 40vw;
+    background-color: ;}
+#instagram {
+    width: 4vw;
+}
+
+
+/* ## Index ## */
+
+#Description {
+    height: 35vw;
+    background-image: url("images/students.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#DescriptionGrid {
+    padding-top: 6.5vw;
+}
+#DescriptionText {
+    font-weight: 600;
+    font-size: 2.7vw;
+    padding-top: 4vw;
+    text-shadow: 2px 2px 4px #202020;
+}
+
+#studentButton {
+    animation: studentFadeIn 2s;
+    height: 7vw;
+    background-image: url(images/studentSignupBackgroundHalf.png);
+    background-size: 100%;
+}
+#studentButton:hover{
+    background-image: url(images/studentSignupBackgroundFull.png);
+    background-size: 100%;
+}
+#tutorButton {
+    animation: tutorFadeIn 2s;
+    height: 7vw;
+    background-image: url(images/tutorSignupBackgroundHalf.png);
+    background-size: 100%;
+}
+#tutorButton:hover{
+    background-image: url(images/tutorSignupBackgroundFull.png);
+    background-size: 100%;
+}
+
+/* would use bootstrap but bootstrap negative margin doesn't work */
+#whoWeAre {
+    margin-top: -5vw;
+    margin-bottom: -5vw
+}
+#whatWeDo {
+    background-image: url(images/whatwedo.png);
+}
+#whatWeDoText {
+    margin-bottom: -5vw
+}
+
+#newsHeader {
+    margin-left: 39vw;
+}
+.newsVideo
+ {
+    width: 40vw;
+    height: 22.5vw;
+    box-shadow: 1vw 1vw 1vw #4b4b4b; 
+}
+
+/* ## About Us ## */
+
+#story {
+    text-align: left;
+    padding-top: 11vw;
+    padding-left: 5vw;
+    height: 35vw;
+    background-image: url("images/tutors.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#storyDescriptionText {
+    font-weight: 600;
+    font-size: 2.7vw;
+    padding-top: 4vw;
+    text-shadow: 2px 2px 4px #202020;
+}
+#subDescriptionText {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-top: -40px;
+    text-shadow: 2px 2px 4px #202020;
+
+}
+
+.scaleDown {
+    width: 40vw;
+}
+
+#tutorHeader {
+    margin-left: 29vw;
+    margin-bottom: 2vw;
+}
+
+.card-body {
+    background-color: #7967b6;
+}
+#profiles {
+    width: 80vw;
+}
+
+/* ## Other ## */
 
 @keyframes studentFadeIn {
     0% {
@@ -58,3 +208,65 @@ body {text-align: center; font-family: 'Myriad Pro', sans-serif;}
         margin-right: 0%;
     }
 }
+
+@media (max-width: 790px){
+    .nav-link {
+        font-size: 2vw; margin-left: -2.7vw;
+    }
+    .navbar-brand {
+        font-size: 3vw;
+    }
+
+    .signUpButton {
+        scale: 135%;
+    }
+    #tutorButton {
+        margin-left: 4.5vw
+    }
+    #studentButton {
+        margin-right: 4.5vw
+    }
+    #DescriptionText {
+        scale: 110%; margin-top: -3vw
+    }
+
+    #NBCVideo {
+        margin-bottom: 10vw;
+    }
+
+    #audpop {
+        margin-top: 8vw;
+        height: 50vw;
+    }
+
+    .newsVideo {
+        box-shadow: 0px 0px;
+        width: 80vw;
+        margin-top: 3w;
+        margin-bottom: 2vw;
+        height: 30vw;
+    }
+
+
+    @keyframes tutorFadeIn {
+        0% {
+        opacity: 0%;
+        margin-left: 10vw;
+        }
+    100% {
+        opacity: 100%;
+        margin-right: 0%;
+        }
+    }
+    @keyframes studentFadeIn {
+        0% {
+        opacity: 0%;
+        margin-right: 10vw;
+        }
+    100% {
+        opacity: 100%;
+        margin-left: 0%;
+        }
+    }
+}
+

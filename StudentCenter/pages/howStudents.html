@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <title>The Student Center</title>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content = "width=device-width, initial-scale=1"/>
+        <meta name = "description" content = "The Student Center is a non-profit organization providing educational oppurtunities for those in need"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel = "icon" type = "image/jpeg" href = "../images/signup.png"/>
+        <!-- Font import -->
+        <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+        <link href = "../stylesheet.css" rel = "stylesheet">
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-sm ps-3">
+            <ul class = "nav">
+                <li class = "pt-2">
+                    <a class = "navbar-brand">The Student Center</a>
+                </li>
+                <li class = "active nav-item">
+                    <a id = "homeButton" class = "nav-link" href = "../index.html">Home</a>
+                </li>
+                <li class = "active nav-item"><a class = "active nav-link">Become a student</a></li>
+                <li class = "nav-item">
+                    <a class = "nav-link" target="_blank" href = "https://forms.gle/LpRzzMBNu6HPhcLz7">Become a tutor</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-lg-6 col-12 align-self-center"><strong>Online and In-Person</br>Zoom, Whatsapp, Call</br>English, Math, Science</strong></div>
+                <div class = "col-lg-6 col-12"> 
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder= "Email address">
+
+                            <input class="form-control"placeholder="Full Name">
+                            
+                            <input class="form-control"placeholder="Age (number)">
+                            <!-- email -->
+                            <input class="form-control"placeholder="Phone Number">
+
+                            <input class="form-control"placeholder="Education level (Kindergarden -> Graduate)">
+                            
+                            <input class="form-control"placeholder="Number of years studying english (write 'fluent' if you are fluent)">
+
+                            <label>Topics you want to learn</label>
+                            <div class = "form-group">
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">English</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Math</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox2">History</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group radioLabel ">
+                                <label class="form-check-label d-flex justify-content-center" for="radioLabel">Preferred Method of Contact</label>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                      Zoom
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    Whatsapp
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex justify-content-center">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                  <label class="form-check-label" for="exampleRadios3">
+                                    Telegram
+                                  </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</html>
