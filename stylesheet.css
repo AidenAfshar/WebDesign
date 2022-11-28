@@ -122,15 +122,27 @@ a {
 }
 
 /* would use bootstrap but bootstrap negative margin doesn't work */
+#whatWeDo {
+    background-image: url(images/whatwedo.png);
+}
+#becomeStudent {
+    font-size: 1.1vw;
+    width: 10vw;
+    margin-top: -52vw;
+    margin-right: 75vw;
+    font-weight: 300;
+}
+
 #whoWeAre {
     margin-top: -5vw;
     margin-bottom: -5vw
 }
-#whatWeDo {
-    background-image: url(images/whatwedo.png);
-}
-#whatWeDoText {
-    margin-bottom: -5vw
+#learnMoreAboutUs {
+    font-size: 1vw;
+    width: 8vw;
+    margin-top: -40vw;
+    margin-right: 75vw;
+    font-weight: 300;
 }
 
 #newsHeader {
@@ -168,6 +180,10 @@ a {
     margin-top: -40px;
     text-shadow: 2px 2px 4px #202020;
 
+}
+
+#historyGroup {
+    margin-top: -6vw;
 }
 
 .scaleDown {
@@ -210,6 +226,7 @@ a {
 }
 
 @media (max-width: 790px){
+    /* ## Universal ## */
     .nav-link {
         font-size: 2vw; margin-left: -2.7vw;
     }
@@ -217,8 +234,10 @@ a {
         font-size: 3vw;
     }
 
+    /* ## Index ## */
+
     .signUpButton {
-        scale: 135%;
+        scale: 125%;
     }
     #tutorButton {
         margin-left: 4.5vw
@@ -247,7 +266,6 @@ a {
         height: 30vw;
     }
 
-
     @keyframes tutorFadeIn {
         0% {
         opacity: 0%;
@@ -267,6 +285,17 @@ a {
         opacity: 100%;
         margin-left: 0%;
         }
+    }
+
+    /* ## aboutUs ## */
+
+    #becomeStudent {
+        margin-right: 71vw;
+        width: 14vw;
+    }
+    #learnMoreAboutUs {
+        margin-right: 72vw;
+        width: 11vw;
     }
 }
 

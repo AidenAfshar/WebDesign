@@ -38,11 +38,11 @@
 
         <div id = "Description" class = "container-fluid">
             <div id = "DescriptionGrid" class = "row">
-                <div class = "col-lg-8 col-12 d-flex align-self-center justify-content-center">
+                <div class = "col-lg-8 col-12 align-self-center justify-content-center">
                     <p id = "DescriptionText" class = "text-light">Free online and In-Person tutoring<br/>We Teach 
                     English Math and Science<br/>All in Farsi, English, or Spanish</p>
                 </div>
-                <div class = "pt-lg-5 col-lg-4 col-12 d-flex align-self-center justify-content-center">
+                <div class = "pt-lg-5 col-lg-4 col-12">
                     <div class = "col"> 
                         <a href = "https://forms.gle/7y2mSPM8TWYSQyod7" target = "_blank">
                             <img class = "signUpButton" id = "studentButton" class = "img-fluid" alt = "sign up to be a student button" src = "images/becomestudent.png">
@@ -55,12 +55,14 @@
             </div>
         </div>
 
-        <!-- Text is in image to here because of alignment issues -->
+        <!-- Text is in image here (and on other page) because of alignment issues -->
         <img class = "img-fluid" src = "images/whatwedo.png">
+        <a id = "becomeStudent" target = "_blank" href="https://forms.gle/7y2mSPM8TWYSQyod7" class="btn btn-light" role="button">Become a student</a>
         <img id = "whoWeAre" class = "img-fluid" src = "images/us.png">
+        <a id = "learnMoreAboutUs" href="pages/aboutUs.html" class="btn btn-light" role="button">Learn More</a>
 
         <h1 id = "newsHeader" class = "text-light headerText">News Coverage</h1>
-        <!-- Needed to put the css on the container instead of the embed itself because css directly modifying the embed didn't work -->
+        <!-- Needed to put the css on the container instead of the embed itself because css directly modifying the embed didn't work, there are also some sizing issues with the embeds I couldn't get around because of lack of documentation-->
         <div class = "container-fluid">
             <div class = "row mb-lg-5 mt-lg-5">
                 <div class = "col-lg-6 col-md-6 col-12">
@@ -82,12 +84,10 @@
         <div id = "footer" class = "container-fluid">
             <div class = "row">
                 <div id = "terms" class = "col">
-                    <p class = "text-light noLineBreak">Created by Aiden Afshar -- 2022</p>
-                    <br/>
+                    <p class = "text-light noLineBreak">Created by Aiden Afshar -- 2022</p><br/> <!-- Had to use noLineBreak + <br> for spacing consistency -->
                     <a class = "text-light termsLink" href = "#">Privacy Policy</a>
                     <p class = "text-light noLineBreak">┃</p>
-                    <a class = "text-light termsLink" href = "#">Terms of use</a>
-                    <br/> <!-- Had to use br here instead of not using "noLineBreak" class because it would otherwise push the email link to the next line -->
+                    <a class = "text-light termsLink" href = "#">Terms of use</a><br/> <!-- Had to use br here instead of not using "noLineBreak" class because it would otherwise push the email link to the next line -->
                     <p class = "text-light noLineBreak">Contact us at: </p>
                     <a class = "text-light" href = "mailto: student.center.mail@gmail.com">student.center.mail@gmail.com</a>
                 </div>
